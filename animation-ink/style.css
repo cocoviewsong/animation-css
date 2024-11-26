@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  .title {
+    font-size: 6em;
+  }
+}
+
+.banner::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+  /* 实现 */
+  mask-image: url(ink_lv2.gif);
+  mask-size: cover;
+  mask-position: center;
+}

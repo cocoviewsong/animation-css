@@ -1,0 +1,16 @@
+body {
+  background-color: #242424;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.image-list {
+  /* 将一个元素的内容分成指定数量的列 */
+  column-count: 3;
+
+  /* 用来设置元素的列宽和列数。 */
+  columns: 300px;
+}
